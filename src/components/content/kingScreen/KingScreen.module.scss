@@ -1,0 +1,49 @@
+
+.screen {
+  width: 100%;
+  background-color: rgba(52, 29, 46, 0.6);
+  position: relative;
+
+  .screen__inner {
+    display: flex;
+    height: 580px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+
+    .screen__title {
+      margin-bottom: 20px;
+
+      .title__one {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .title__two {
+        display: block;
+        font-size: 45px;
+        margin-bottom: 10px;
+      }
+
+      .title__thre {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+
+    .screen__decor {
+      display: block;
+      width: 100px;
+      height: 2px;
+      background-color: #faf7f7;
+      margin-bottom: 20px;
+    }
+
+    .screen__social {
+
+    }
+  }
+}
