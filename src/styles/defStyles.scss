@@ -1,7 +1,26 @@
+// Default
+/* Fonts
+==============================================================================
+ */
+
+@font-face {
+  font-family: "RobotoReg";
+  src: url("./fonts/Roboto.ttf") format("truetype");
+font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "LoraReg";
+  src: url("./fonts/Lora.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+
 /* Reset
   ========================================================================== */
-
-// Default
 html,
 body,
 div,
@@ -87,11 +106,12 @@ video {
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  font-family: "Gilroy";
+  font-family: "RobotoReg";
 }
 
 // Links
 a {
+  font-family: "RobotoReg";
   text-decoration: none;
   &:active,
   &:hover {
@@ -166,7 +186,7 @@ button {
   border: none;
   font-size: 100%;
   margin: 0;
-  font-family: "Gilroy";
+    font-family: "RobotoReg";
 }
 button,
 input {

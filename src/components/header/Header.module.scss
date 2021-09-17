@@ -1,3 +1,5 @@
+@import "../../styles/index";
+
 
 .header {
   top: 0;
@@ -5,21 +7,56 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
   position: fixed;
-  color: white;
+  color: $TitleColorWhate;
   z-index: 1;
 
   .header__inner {
-    padding: 60px 0 20px 0;
+    padding: 40px 0 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+
+    .header__logo {
+      cursor: pointer;
+      position: relative;
+      display: block;
+      margin: 15px; //?
+
+      .header__logo_text {
+        font-size: 20px;
+        letter-spacing: 2px;
+        user-select: none;
+      }
+
+      .header__logo_angle {
+        position: absolute;
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-image: url("../../imgs/icons/angle.svg");
+        background-repeat: no-repeat;
+
+        &.right {
+          bottom: -5px;
+          right: -10px;
+        }
+
+        &.left {
+          transform: rotate(180deg);
+          top: -5px;
+          left: -10px;
+        }
+      }
+    }
+
 
     .header__burger {
       cursor: pointer;
       width: 15px;
       height: 12px;
       position: relative;
-
+      margin-right: 10px;
       &:hover {
         &::before {
           left: 0;
@@ -32,7 +69,7 @@
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: #fff;
+        background-color: $TitleColorWhate;
       }
 
       &::before, &::after {
@@ -41,7 +78,7 @@
         position: absolute;
         width: 15px;
         height: 2px;
-        background-color: #fff;
+        background-color: $TitleColorWhate;
       }
 
       &::before {
@@ -58,12 +95,130 @@
 
 ///////////////////////////////////////////////////////////
 
-.header__menu {
+.menu {
+  animation: showMenu .7s ease-in-out;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 100;
   width: 100%;
   height: 100vh;
-  background-color: rgba(52, 38, 17, 0.58);
+  background-color: $BgColor;
+  background-image: url("../../imgs/Frame_menu.jpg");
+  background-size: cover;
+
+  .menu__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .menu__cross {
+      cursor: pointer;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-image: url("../../imgs/icons/cross.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      background-size: 30px;
+      top: 100px;
+      right: 20%;
+    }
+
+
+    .menu__title {
+      padding: 0 50px 0 140px;
+      position: relative;
+
+      .menu__title_decor {
+        display: block;
+        width: 230px;
+        height: 1px;
+        background-image: url("../../imgs/decor-line.png");
+        transform: rotate(90deg);
+        position: absolute;
+        left: 0;
+        top: 50%;
+      }
+
+      .menu__title_text {
+        color: $TitleColorWhate;
+        font-size: 60px;
+
+        p {
+          margin-bottom: 15px;
+          font-family: LoraReg;
+        }
+      }
+    }
+
+    .menu__navbar {
+      width: 350px;
+      height: 100vh;
+      background-color: $BgColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .header__menu_list {
+        padding: 50px;
+
+        .header__menu_item {
+          font-size: 30px;
+          margin: 15px 0;
+          text-transform: uppercase;
+
+          a {
+            color: $TitleColorWhate;
+            font-family: LoraReg;
+
+            &:hover {
+              color: $TitleColor;
+              transition: color .3s ease-in-out;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+@keyframes showMenu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 960px) {
+  .menu {
+    background-image: none;
+
+    .menu__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .menu__title {
+        display: none;
+      }
+
+      .menu__cross {
+        top: 10%;
+      }
+
+      .menu__navbar {
+        width: 100%;
+        .header__menu_list {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+
+  }
 }

@@ -1,8 +1,11 @@
+@import "src/styles/index";
+
 
 .screen {
   width: 100%;
-  background-color: rgba(52, 29, 46, 0.6);
+  background-color: $BgColor;
   position: relative;
+  background-size: cover;
 
   .screen__inner {
     display: flex;
@@ -10,21 +13,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #fff;
+    color: $TitleColorWhate;
 
     .screen__title {
-      margin-bottom: 20px;
-
+      margin-top: 100px;
+      letter-spacing: 3px;
       .title__one {
         display: block;
-        font-size: 20px;
+        font-size: 23px;
+
         margin-bottom: 10px;
+        text-transform: uppercase;
       }
 
       .title__two {
         display: block;
-        font-size: 45px;
+        font-size: 55px;
         margin-bottom: 10px;
+        font-family: LoraReg;
+        color: $TitleColor;
       }
 
       .title__thre {
@@ -36,14 +43,30 @@
 
     .screen__decor {
       display: block;
-      width: 100px;
-      height: 2px;
-      background-color: #faf7f7;
-      margin-bottom: 20px;
+      width: 120px;
+      height: 1px;
+      background-image: url("../../../imgs/decor-line.png");
+      margin: 20px 0;
     }
 
     .screen__social {
-
+      padding: 50px 0 20px 0;
+      display: flex;
+      align-items: center;
+      .screen__social_decor {
+        display: block;
+        background-image: url("../../../imgs/icons/Line.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 60px;
+        height: 30px;
+      }
+      a {
+        display: block;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
