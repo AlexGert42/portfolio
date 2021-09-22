@@ -1,0 +1,37 @@
+@import "../../../styles/index";
+@import "../../../styles/mixins";
+
+.contacts {
+  padding: 50px 0;
+  animation: ShowScreeen .5s ease-in-out;
+
+
+  .contacts__inputs {
+    margin-bottom: 30px;
+    margin: 0 -15px;
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      @include titleStyle($size: 18px, $color: $TitleColorWhate);
+      padding: 15px;
+      width: 100%;
+      margin: 0 15px 15px 15px;
+      background-color: $BgFooterHeader;
+    }
+  }
+
+  .contacts__arial {
+    margin: 15px 0 30px 0;
+    textarea {
+      @include titleStyle($size: 18px, $color: $TitleColorWhate);
+      width: 100%;
+      padding: 15px;
+      background-color: $BgFooterHeader;
+      height: 300px;
+      &::placeholder {
+
+      }
+    }
+  }
+}

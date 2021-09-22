@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {NavLink} from 'react-router-dom'
 import styles from './Header.module.scss'
 
@@ -7,17 +7,26 @@ export const Header: React.FC = () => {
 
     const [flag, setFlag] = useState<boolean>(false)
 
+    const [sideMenu, setSideMenu] = useState(false)
+
     const clickHendler = (value: boolean) => {
         setFlag(value)
     }
 
-    return (
+    useEffect(() =>{
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 150) setSideMenu(true)
+            if (window.scrollY <= 150) setSideMenu(false)
+        })
+    }, [])
+
+        return (
         <>
             {
                 flag ?
-                    <BurdgerLayout clickHendler={clickHendler}/>
+                    <MenuLayout clickHendler={clickHendler}/>
                     :
-                    <header className={styles.header}>
+                    <header className={`${styles.header} ${sideMenu && styles.scroll}`}>
                         <div className={"container"}>
                             <div className={styles.header__inner}>
                                 <h1 className={styles.header__logo}>
@@ -41,7 +50,7 @@ type clickHendlerType = {
     clickHendler: (value: boolean) => void
 }
 
-const BurdgerLayout: React.FC<clickHendlerType> = ({clickHendler}) => {
+const MenuLayout: React.FC<clickHendlerType> = ({clickHendler}) => {
 
     return (
         <div className={styles.menu}>

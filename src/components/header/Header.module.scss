@@ -1,4 +1,5 @@
 @import "../../styles/index";
+@import "../../styles/mixins";
 
 
 .header {
@@ -10,22 +11,30 @@
   color: $TitleColorWhate;
   z-index: 1;
 
+  &.scroll {
+    background-color: $BgFooterHeader;
+
+    .header__inner {
+      padding: 10px 0 10px 0;
+      transition: all .3s ease-in-out;
+    }
+  }
+
   .header__inner {
     padding: 40px 0 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    @include flexBox();
 
     .header__logo {
       cursor: pointer;
       position: relative;
       display: block;
-      margin: 15px; //?
+      margin: 15px;
 
       .header__logo_text {
-        font-size: 20px;
-        letter-spacing: 2px;
+        //font-size: 20px;
+        //letter-spacing: 2px;
+
+        @include titleStyle();
         user-select: none;
       }
 
@@ -57,6 +66,7 @@
       height: 12px;
       position: relative;
       margin-right: 10px;
+
       &:hover {
         &::before {
           left: 0;
@@ -108,9 +118,7 @@
   background-size: cover;
 
   .menu__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexBox();
 
 
     .menu__cross {
@@ -143,8 +151,7 @@
       }
 
       .menu__title_text {
-        color: $TitleColorWhate;
-        font-size: 60px;
+        @include titleStyle($size: 60px);
 
         p {
           margin-bottom: 15px;
@@ -157,21 +164,17 @@
       width: 350px;
       height: 100vh;
       background-color: $BgColor;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexBox(center);
 
       .header__menu_list {
         padding: 50px;
 
         .header__menu_item {
-          font-size: 30px;
           margin: 15px 0;
-          text-transform: uppercase;
 
           a {
-            color: $TitleColorWhate;
-            font-family: LoraReg;
+            text-transform: uppercase;
+            @include titleStyle($size: 30px, $family: LoraReg);
 
             &:hover {
               color: $TitleColor;
@@ -184,6 +187,7 @@
     }
   }
 }
+
 @keyframes showMenu {
   0% {
     opacity: 0;
@@ -198,9 +202,7 @@
     background-image: none;
 
     .menu__inner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexBox(center);
 
       .menu__title {
         display: none;
@@ -212,10 +214,9 @@
 
       .menu__navbar {
         width: 100%;
+
         .header__menu_list {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          @include flexBox($flexDirection: column);
         }
       }
     }

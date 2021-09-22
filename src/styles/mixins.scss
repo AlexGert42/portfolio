@@ -1,0 +1,25 @@
+@import "./index";
+
+@mixin flexBox(
+  $justifyContent: space-between,
+   $alignItems: center,
+    $flexDirection: row,
+     $flexWrap: nowrap
+) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $flexWrap;
+}
+
+@mixin titleStyle(
+  $size: 20px,
+  $family: RobotoReg,
+  $color: $TitleColorWhate
+) {
+  letter-spacing: 3px;
+  font-size: $size;
+  font-family: $family;
+  color: $color;
+}

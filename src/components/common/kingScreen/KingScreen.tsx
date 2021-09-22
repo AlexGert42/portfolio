@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './KingScreen.module.scss'
-import F from '../../../imgs/Frame_menu.jpg'
+import F from '../../../imgs/Frame_home.jpg'
 
 import github from '../../../imgs/icons/Github_white.svg'
 import telegram from '../../../imgs/icons/Telegram.svg'
@@ -8,26 +8,19 @@ import linkIn from '../../../imgs/icons/google.svg'
 import hh from '../../../imgs/icons/hh.svg'
 
 
-
-
-
-
-
-
-
 type KingScreenType = {
     frame?: string
-    title_1?: string | undefined
+    title_1?: string
     title_2?: string
     title_3?: string
 }
 
 
 export const KingScreen: React.FC<KingScreenType> = ({
-                                                         frame= F,
+                                                         frame = F,
                                                          title_1 = 'Hello,',
-                                                         title_2= "I'M Alex Gert",
-                                                         title_3= 'Front-End Developer'
+                                                         title_2 = "I'M Alex Gert",
+                                                         title_3 = 'Front-End Developer'
                                                      }) => {
 
     return (
@@ -45,29 +38,21 @@ export const KingScreen: React.FC<KingScreenType> = ({
                     <span className={styles.screen__decor}/>
 
                     <div className={styles.screen__social}>
-                        <div className={styles.screen__social_item}>
-                            <a href="#">
-                                <img src={github} alt="GH"/>
-                            </a>
-                        </div>
+                        <a href="#">
+                            <img src={github} alt="GH"/>
+                        </a>
                         <span className={styles.screen__social_decor}/>
-                        <div className={styles.screen__social_item}>
-                            <a href="#">
-                                <img src={telegram} alt="TL"/>
-                            </a>
-                        </div>
+                        <a href="#">
+                            <img src={telegram} alt="TL"/>
+                        </a>
                         <span className={styles.screen__social_decor}/>
-                        <div className={styles.screen__social_item}>
-                            <a href="#">
-                                <img src={hh} alt="HH"/>
-                            </a>
-                        </div>
+                        <a href="#">
+                            <img src={hh} alt="HH"/>
+                        </a>
                         <span className={styles.screen__social_decor}/>
-                        <div className={styles.screen__social_item}>
-                            <a href="#">
-                                <img src={linkIn} alt="IN"/>
-                            </a>
-                        </div>
+                        <a href="#">
+                            <img src={linkIn} alt="IN"/>
+                        </a>
                     </div>
                 </div>
             </div>

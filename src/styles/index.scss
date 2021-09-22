@@ -1,10 +1,13 @@
 @import "defStyles";
 
-
-$BgColor: #181818;
+//vars
+$BgColor: rgb(24, 24, 24);
+$BgFooterHeader: #131414;
 $TitleColor: #BA9B5F;
-$TitleColorWhate: #cccccc;
+$TitleColorWhate: rgb(204, 204, 204);
 $TextColor: #EAEAEA;
+
+
 
 .wrapper {
   width: 100%;
@@ -17,13 +20,44 @@ $TextColor: #EAEAEA;
   height: 100%;
   max-width: 1200px;
   padding: 0 20px;
-  color: $TitleColorWhate;
-  //border: 1px solid;
-
+  color: $TextColor;
   @media (max-width: 1200px) {
     max-width: 1000px;
   }
   @media (max-width: 1000px) {
     max-width: 768px;
+  }
+}
+
+
+
+
+//scrollbar
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+  background-color: $BgColor;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color:  rgba(204, 204, 204, 0.5);
+  -webkit-box-shadow: 0 0 1px $BgColor;
+  &:hover {
+    background-color: $TitleColorWhate;
+  }
+}
+
+
+///
+@keyframes ShowScreeen {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
   }
 }

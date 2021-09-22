@@ -1,0 +1,54 @@
+@import "../../../../styles/index";
+@import "../../../../styles/mixins";
+
+
+.card {
+  width: 100%;
+  background-image: url("../../../../imgs/card.jpg");
+  overflow: hidden;
+  margin: 0 20px;
+
+  @media (max-width: 800px) {
+    height: 350px;
+  }
+
+  .card__inner {
+    padding: 30px;
+    min-height: 100%;
+    opacity: 0;
+    margin-left: -100%;
+    @include flexBox($flexDirection: column, $alignItems: space-between);
+
+    &:hover {
+      transition: all .3s ease-in-out;
+      opacity: 1;
+      margin-left: 0;
+      background-color: rgba(19, 20, 20, 0.7);
+    }
+
+
+    .card__title {
+      @include titleStyle($size: 25px, $family: LoraReg, $color: $TitleColor);
+      text-transform: uppercase;
+    }
+
+    .card__decor {
+      display: block;
+      width: 120px;
+      height: 1px;
+      background-image: url("../../../../imgs/decor-line.png");
+      margin: 20px 0;
+    }
+
+    .card__name {
+      @include titleStyle($size: 20px);
+    }
+
+    .card__discription {
+      a {
+        @include titleStyle($size: 30px);
+        cursor: pointer;
+      }
+    }
+  }
+}

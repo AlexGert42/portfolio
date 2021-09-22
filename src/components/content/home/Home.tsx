@@ -1,6 +1,11 @@
 import React from 'react'
 import styles from './Home.module.scss'
-import {KingScreen} from "../kingScreen/KingScreen";
+import {KingScreen} from "../../common/kingScreen/KingScreen";
+
+
+
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
 
 
 export const Home = () => {
@@ -10,60 +15,155 @@ export const Home = () => {
             <KingScreen/>
 
             <div className={"container"}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores aspernatur
-                beatae, cumque debitis earum, expedita illo ipsum, maiores maxime neque nihil obcaecati odio perferendis
-                tempore totam unde vel!
 
+                <Fade left>
+
+
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a quaerat soluta, ut.a
+
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
+                    cupiditate
+                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
+                    laboriosam
+                    quaerat soluta, ut.a
+
+
+                    </Fade>
             </div>
         </>
     )
