@@ -9,28 +9,57 @@
   .contacts__inputs {
     margin-bottom: 30px;
     margin: 0 -15px;
-    display: flex;
-    justify-content: space-between;
-
-    input {
-      @include titleStyle($size: 18px, $color: $TitleColorWhate);
-      padding: 15px;
-      width: 100%;
-      margin: 0 15px 15px 15px;
-      background-color: $BgFooterHeader;
+    @include flexBox();
+    @media (max-width: 768px) {
+      display: block;
+      margin: 0
     }
+
+    //input {
+    //  @include titleStyle($size: 18px, $color: $TitleColorWhate);
+    //  padding: 15px;
+    //  width: 100%;
+    //  margin: 0 15px 15px 15px;
+    //  background-color: $BgFooterHeader;
+    //  @media (max-width: 768px) {
+    //    margin: 0;
+    //    &:nth-child(1) {
+    //      margin: 0 0 15px 0;
+    //    }
+    //  }
+    //
+    //  &::placeholder {
+    //    @include titleStyle($size: 18px, $color: rgba(204, 204, 204, 0.5));
+    //  }
+    //
+    //  &:hover {
+    //    &::placeholder {
+    //      transition: color .2s ease-in-out;
+    //      color: rgba(204, 204, 204, 0.8);
+    //    }
+    //  }
+    //}
   }
 
   .contacts__arial {
     margin: 15px 0 30px 0;
+
     textarea {
       @include titleStyle($size: 18px, $color: $TitleColorWhate);
       width: 100%;
       padding: 15px;
       background-color: $BgFooterHeader;
       height: 300px;
-      &::placeholder {
 
+      &::placeholder {
+        @include titleStyle($size: 18px, $color: rgba(204, 204, 204, 0.5));
+      }
+
+      &:hover {
+        &::placeholder {
+          transition: color .2s ease-in-out;
+          color: rgba(204, 204, 204, 0.8);
+        }
       }
     }
   }

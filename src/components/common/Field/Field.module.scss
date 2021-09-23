@@ -1,0 +1,31 @@
+@import "../../../styles/index";
+@import "../../../styles/mixins";
+
+.field {
+  @include titleStyle($size: 18px, $color: $TitleColorWhate);
+  padding: 15px;
+  width: 100%;
+  margin: 0 15px 15px 15px;
+  background-color: $BgFooterHeader;
+  @media (max-width: 768px) {
+    margin: 0;
+    &:nth-child(1) {
+      margin: 0 0 15px 0;
+    }
+  }
+
+  &::placeholder {
+    @include titleStyle($size: 18px, $color: rgba(204, 204, 204, 0.5));
+  }
+
+  &:hover {
+    &::placeholder {
+      transition: color .2s ease-in-out;
+      color: rgba(204, 204, 204, 0.8);
+    }
+  }
+}
+
+.error {
+  color: red;
+}

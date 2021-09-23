@@ -4,7 +4,7 @@ import styles from './Button.module.scss';
 
 type ButtonType = HTMLAttributes<HTMLButtonElement> & {
     error?: string
-    clickHender: () => void
+    clickHender?: () => void
 }
 
 export const Button: React.FC<ButtonType> = ({
