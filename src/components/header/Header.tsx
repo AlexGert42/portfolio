@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react'
-import {NavLink} from 'react-router-dom'
 import styles from './Header.module.scss'
+// @ts-ignore
+import Tilt from 'react-tilt'
 
+import { HashLink } from 'react-router-hash-link';
 
 export const Header: React.FC = () => {
 
@@ -13,14 +15,14 @@ export const Header: React.FC = () => {
         setFlag(value)
     }
 
-    useEffect(() =>{
+    useEffect(() => {
         window.addEventListener('scroll', () => {
             if (window.scrollY >= 150) setSideMenu(true)
             if (window.scrollY <= 150) setSideMenu(false)
         })
     }, [])
 
-        return (
+    return (
         <>
             {
                 flag ?
@@ -50,7 +52,10 @@ type clickHendlerType = {
     clickHendler: (value: boolean) => void
 }
 
-const MenuLayout: React.FC<clickHendlerType> = ({clickHendler}) => {
+const MenuLayout = ({clickHendler}: clickHendlerType) => {
+
+
+
 
     return (
         <div className={styles.menu}>
@@ -58,28 +63,30 @@ const MenuLayout: React.FC<clickHendlerType> = ({clickHendler}) => {
 
                 <span className={styles.menu__cross} onClick={() => clickHendler(false)}/>
 
-
-                <div className={styles.menu__title}>
-                    <span className={styles.menu__title_decor}/>
-                    <h1 className={styles.menu__title_text}>
-                        <p>First, solve the problem.</p>
-                        <p>Then, write the code.</p>
-                    </h1>
-                </div>
+                <Tilt options={{max: 5, scale: 1}}>
+                    <div className={styles.menu__title}>
+                        <span className={styles.menu__title_decor}/>
+                        <h1 className={styles.menu__title_text}>
+                            <p>First, solve the problem.</p>
+                            <p>Then, write the code.</p>
+                        </h1>
+                    </div>
+                </Tilt>
 
                 <nav className={styles.menu__navbar}>
                     <ul className={styles.header__menu_list}>
                         <li className={styles.header__menu_item} onClick={() => clickHendler(false)}>
-                            <NavLink to={'/home'}>home</NavLink>
+                            {/*<NavLink to={{pathname: '/home', hash: 'start'}}>home</NavLink>*/}
+                            <HashLink to="/home#start">home</HashLink>
                         </li>
                         <li className={styles.header__menu_item} onClick={() => clickHendler(false)}>
-                            <NavLink to={'/portfolio'}>my works</NavLink>
+                            <HashLink to={'/portfolio#start'}>my works</HashLink>
                         </li>
                         <li className={styles.header__menu_item} onClick={() => clickHendler(false)}>
-                            <NavLink to={'/about'}>about</NavLink>
+                            <HashLink to={'/about#start'}>about</HashLink>
                         </li>
                         <li className={styles.header__menu_item} onClick={() => clickHendler(false)}>
-                            <NavLink to={'/contacts'}>contacts</NavLink>
+                            <HashLink to={'/contacts#start'}>contacts</HashLink>
                         </li>
                     </ul>
                 </nav>
@@ -87,3 +94,5 @@ const MenuLayout: React.FC<clickHendlerType> = ({clickHendler}) => {
         </div>
     )
 }
+
+

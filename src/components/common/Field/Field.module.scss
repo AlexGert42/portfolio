@@ -2,30 +2,62 @@
 @import "../../../styles/mixins";
 
 .field {
-  @include titleStyle($size: 18px, $color: $TitleColorWhate);
-  padding: 15px;
   width: 100%;
-  margin: 0 15px 15px 15px;
-  background-color: $BgFooterHeader;
-  @media (max-width: 768px) {
-    margin: 0;
-    &:nth-child(1) {
-      margin: 0 0 15px 0;
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: 15px;
+
+    &::placeholder {
+      @include titleStyle($size: 18px, $color: rgba(204, 204, 204, 0.5));
+    }
+
+    &:hover {
+      &::placeholder {
+        transition: color .2s ease-in-out;
+        color: rgba(204, 204, 204, 0.8);
+      }
     }
   }
-
-  &::placeholder {
-    @include titleStyle($size: 18px, $color: rgba(204, 204, 204, 0.5));
-  }
-
-  &:hover {
-    &::placeholder {
-      transition: color .2s ease-in-out;
-      color: rgba(204, 204, 204, 0.8);
+  span {
+    position: absolute;
+    left: 15px;
+    bottom: -20px;
+    color: #940000;
+    font-size: 13px;
+    @media (max-width: 768px) {
+      bottom: -5px;
     }
   }
 }
 
-.error {
-  color: red;
+
+.fieldarea {
+  position: relative;
+  margin: 0;
+  textarea {
+
+    width: 100%;
+    padding: 15px;
+
+    &::placeholder {
+      @include titleStyle($size: 18px, $color: rgba(204, 204, 204, 0.5));
+    }
+
+    &:hover {
+      &::placeholder {
+        transition: color .2s ease-in-out;
+        color: rgba(204, 204, 204, 0.8);
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    left: 15px;
+    bottom: -20px;
+    color: #940000;
+    font-size: 13px;
+  }
 }

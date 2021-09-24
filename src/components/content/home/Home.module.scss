@@ -1,0 +1,13 @@
+@import "../../../styles/index";
+@import "../../../styles/mixins";
+
+.home {
+  @include wrapperContent();
+
+  .home__skils {
+    font-size: 20px;
+    p {
+      margin: 150px 0;
+    }
+  }
+}

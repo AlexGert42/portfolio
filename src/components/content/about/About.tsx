@@ -13,8 +13,8 @@ export const About = () => {
                 title_1={''}
                 title_2={'About'}
             />
-            <div className={"container"}>
-
+            <section className={"container"}>
+                <div className={styles.about}>
                 <div style={{padding: '50px 0'}}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem cupiditate
                     expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto laboriosam
@@ -61,8 +61,8 @@ export const About = () => {
                     expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto laboriosam
                     quaerat soluta, ut.a
                 </div>
-
-            </div>
+                </div>
+            </section>
         </>
     )
 }

@@ -1,0 +1,26 @@
+@import "../../../styles/index";
+@import "../../../styles/mixins";
+
+.works {
+  .works__title {
+    display: block;
+    @include titleStyle($size: 30px, $family: LoraReg);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  .works__cards {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(10, 80px);
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    margin: 0 -20px;
+
+    @media (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+

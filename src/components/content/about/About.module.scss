@@ -1,0 +1,6 @@
+@import "../../../styles/index";
+@import "../../../styles/mixins";
+
+.about {
+  @include wrapperContent();
+}

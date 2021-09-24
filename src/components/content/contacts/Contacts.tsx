@@ -3,21 +3,37 @@ import styles from './Contacts.module.scss'
 import {KingScreen} from "../../common/kingScreen/KingScreen";
 import F from '../../../imgs/Frame_contact.jpg'
 import {Button} from "../../common/button/Button";
-import { Field } from '../../common/Field/Field';
+import {Field, FieldArea} from '../../common/Field/Field';
+import {maxLengthCreator, requiredField, validateEmail } from '../../common/validators/Validators';
 
 
 export const Contacts: React.FC = () => {
-
     const [name, setName] = useState<string>('')
     const [email, setEmail] = useState<string>('')
+    const [text, setText] = useState<string>('')
+    const [error_1, setError_1] = useState<string>('')
+    const [error_2, setError_2] = useState<string>('')
+    const [error_3, setError_3] = useState<string>('')
+
+    const [valid_1, valid_2, valid_3] = [requiredField, maxLengthCreator, validateEmail]
 
 
 
-
-
-    const submitHendler = (e: any) => {
+    const submitHendler = (e: React.SyntheticEvent) => {
         e.preventDefault()
+        setError_1(valid_1(name) || valid_2(name))
+        setError_2(valid_1(email) || valid_2(email) || valid_3(email))
+        setError_3(valid_1(text) || valid_2(text, 250))
 
+        if (!error_1) {
+            console.log(name)
+        }
+        if (!error_2) {
+            console.log(email)
+        }
+        if (!error_3) {
+            console.log(text)
+        }
     }
 
 
@@ -33,25 +49,28 @@ export const Contacts: React.FC = () => {
                 <form className={styles.contacts} onSubmit={submitHendler}>
                     <div className={styles.contacts__inputs}>
                         <Field
+                            className={styles.contacts__inputs_item}
                             placeholder={'Name & Surname'}
                             value={name}
                             onChange={e => setName(e.target.value)}
-                            validators={[
-                                maxLengthCreator
-                            ]}
+                            error={error_1}
                         />
                         <Field
+                            className={styles.contacts__inputs_item}
                             placeholder={'E-mail Address'}
                             value={email}
                             onChange={e => setEmail(e.target.value)}
-                            validators={[
-                                validateEmail,
-                                maxLengthCreator
-                            ]}
+                            error={error_2}
                         />
                     </div>
                     <div className={styles.contacts__arial}>
-                        <textarea placeholder={'Message'}/>
+                        <FieldArea
+                            className={styles.contacts__arial_item}
+                            value={text}
+                            onChange={e => setText(e.target.value)}
+                            placeholder={'Message'}
+                            error={error_3}
+                        />
                     </div>
                     <Button>Send</Button>
                 </form>
@@ -66,31 +85,6 @@ export const Contacts: React.FC = () => {
 
 
 
-
-const requiredField = (value: string) => {
-    if (value.trim()) {
-        return ''
-    } else {
-        return 'Field is required'
-    }
-}
-
-const maxLengthCreator = (value: string, maxLength: number = 20) => {
-    if (value.length <= maxLength) {
-        return ''
-    } else {
-        return `Max length is ${maxLength} sumbols`
-    }
-}
-
-const validateEmail = (value: string) => {
-    const reg = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
-    if (reg.test(String(value).toLowerCase())) {
-        return ''
-    } else {
-        return 'Incorrect Email'
-    }
-}
 
 
 

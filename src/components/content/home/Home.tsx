@@ -1,170 +1,98 @@
 import React from 'react'
 import styles from './Home.module.scss'
 import {KingScreen} from "../../common/kingScreen/KingScreen";
-
-
-
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
+import {MyWorks} from "../../common/myWorks/MyWorks";
 
 
 export const Home = () => {
 
     return (
-        <>
+        <div>
+            {/*<div id={'start'}/>*/}
             <KingScreen/>
 
-            <div className={"container"}>
+            <section  className={"container"}>
+                <div className={styles.home}>
+                    <div className={styles.home__skils}>
 
-                <Fade left>
-
-
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a quaerat soluta, ut.a
-
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut autem
-                    cupiditate
-                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit in iusto
-                    laboriosam
-                    quaerat soluta, ut.a
-
-
+                        <Fade>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad adipisci
+                                aperiam autem delectus dicta dolor excepturi id ipsa iure laborum minima modi nesciunt,
+                                omnis, quidem saepe ullam voluptatibus.
+                            </p>
+                        </Fade>
+                        <Fade>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad adipisci
+                                aperiam autem delectus dicta dolor excepturi id ipsa iure laborum minima modi nesciunt,
+                                omnis, quidem saepe ullam voluptatibus.
+                            </p>
+                        </Fade>
+                        <Fade>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad adipisci
+                                aperiam autem delectus dicta dolor excepturi id ipsa iure laborum minima modi nesciunt,
+                                omnis, quidem saepe ullam voluptatibus.
+                            </p>
+                        </Fade>
+                        <Fade>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad adipisci
+                                aperiam autem delectus dicta dolor excepturi id ipsa iure laborum minima modi nesciunt,
+                                omnis, quidem saepe ullam voluptatibus.
+                            </p>
+                        </Fade>
+                        <Fade>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad adipisci
+                                aperiam autem delectus dicta dolor excepturi id ipsa iure laborum minima modi nesciunt,
+                                omnis, quidem saepe ullam voluptatibus.
+                            </p>
+                        </Fade>
+                        <Fade>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad adipisci
+                                aperiam autem delectus dicta dolor excepturi id ipsa iure laborum minima modi nesciunt,
+                                omnis, quidem saepe ullam voluptatibus.
+                            </p>
+                        </Fade>
+                        <Fade>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad adipisci
+                                aperiam autem delectus dicta dolor excepturi id ipsa iure laborum minima modi nesciunt,
+                                omnis, quidem saepe ullam voluptatibus.
+                            </p>
+                        </Fade>
+                        <Fade>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad adipisci
+                                aperiam autem delectus dicta dolor excepturi id ipsa iure laborum minima modi nesciunt,
+                                omnis, quidem saepe ullam voluptatibus.
+                            </p>
+                        </Fade>
+                        <Fade>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad adipisci
+                                aperiam autem delectus dicta dolor excepturi id ipsa iure laborum minima modi nesciunt,
+                                omnis, quidem saepe ullam voluptatibus.
+                            </p>
+                        </Fade> <Fade>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad adipisci
+                            aperiam autem delectus dicta dolor excepturi id ipsa iure laborum minima modi nesciunt,
+                            omnis, quidem saepe ullam voluptatibus.
+                        </p>
                     </Fade>
-            </div>
-        </>
+
+                    </div>
+                    <Fade>
+                        <MyWorks/>
+                    </Fade>
+                </div>
+            </section>
+        </div>
     )
 }

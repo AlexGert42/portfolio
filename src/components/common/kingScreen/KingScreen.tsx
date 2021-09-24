@@ -8,6 +8,8 @@ import linkIn from '../../../imgs/icons/google.svg'
 import hh from '../../../imgs/icons/hh.svg'
 
 
+
+
 type KingScreenType = {
     frame?: string
     title_1?: string
@@ -24,16 +26,19 @@ export const KingScreen: React.FC<KingScreenType> = ({
                                                      }) => {
 
     return (
-        <div className={styles.screen} style={{backgroundImage: `url(${frame})`}}>
+        <div id={'start'} className={styles.screen} style={{backgroundImage: `url(${frame})`}}>
             <div className={"container"}>
                 <div className={styles.screen__inner}>
-                    <h1 className={styles.screen__title}>
 
-                        <span className={styles.title__one}>{title_1}</span>
-                        <span className={styles.title__two}>{title_2}</span>
-                        <span className={styles.title__thre}>{title_3}</span>
 
-                    </h1>
+                        <h1 className={styles.screen__title}>
+
+                            <span className={styles.title__one}>{title_1}</span>
+                            <span className={styles.title__two}>{title_2}</span>
+                            <span className={styles.title__thre}>{title_3}</span>
+
+                        </h1>
+
 
                     <span className={styles.screen__decor}/>
 
@@ -54,6 +59,9 @@ export const KingScreen: React.FC<KingScreenType> = ({
                             <img src={linkIn} alt="IN"/>
                         </a>
                     </div>
+
+
+
                 </div>
             </div>
         </div>
