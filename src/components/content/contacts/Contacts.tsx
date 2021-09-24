@@ -3,7 +3,7 @@ import styles from './Contacts.module.scss'
 import {KingScreen} from "../../common/kingScreen/KingScreen";
 import F from '../../../imgs/Frame_contact.jpg'
 import {Button} from "../../common/button/Button";
-import {Field, FieldArea} from '../../common/Field/Field';
+import {Field, FieldArea} from '../../common/field/Field';
 import {maxLengthCreator, requiredField, validateEmail } from '../../common/validators/Validators';
 
 

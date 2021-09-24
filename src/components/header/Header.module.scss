@@ -31,9 +31,6 @@
       margin: 15px;
 
       .header__logo_text {
-        //font-size: 20px;
-        //letter-spacing: 2px;
-
         @include titleStyle();
         user-select: none;
       }
@@ -163,7 +160,7 @@
     .menu__navbar {
       width: 350px;
       height: 100vh;
-      background-color: $BgColor;
+      background-color: $BgFooterHeader;
       @include flexBox(center);
 
       .header__menu_list {

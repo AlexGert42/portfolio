@@ -5,7 +5,7 @@ export const requiredField = (value: string) => {
     if (value.trim()) {
         return ''
     } else {
-        return 'Field is required'
+        return 'field is required'
     }
 }
 
