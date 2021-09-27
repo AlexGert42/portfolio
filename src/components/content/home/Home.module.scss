@@ -2,76 +2,85 @@
 @import "../../../styles/mixins";
 
 .home {
-  @include wrapperContent();
-
-}
-
-.home__skils {
-  @include wrapperContent();
-  margin-bottom: 100px;
-  background-color: #1e1e1e;
+  animation: ShowScreeen .7s ease-in-out;
+  padding-bottom: 100px;
   @media (max-width: 768px) {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
-  .home__skils_title {
-    @include titleStyle($size: 30px, $family: LoraReg);
-    margin: 0 0 50px 0;
 
-  }
-  .skils {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    .skils__item {
-      &:nth-child(2) {
-        margin: 0 30px;
-      }
-      @include flexBox(
-              $justifyContent: flex-start,
-              $alignItems: center,
-              $flexDirection: column,
-      );
-      img {
-        width: 100%;
-        max-width: 150px;
-      }
-      h3 {
-        @include titleStyle($color: $TitleColor);
-        text-transform: uppercase;
-        margin-bottom: 30px;
-      }
-      p{
-        @include titleStyle($size: 18px, $color: $TextColor);
-        text-align: center;
-        line-height: 25px;
-      }
+  .home__skils {
+    padding: 100px 0;
+    margin-bottom: 100px;
+    background-color: #1e1e1e;
+
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+      padding: 50px 0;
     }
 
+    .home__skils_title {
+      @include titleStyle($size: 30px, $family: LoraReg);
+      margin: 0 0 50px 0;
+
+    }
+
+    .skils {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      @media (max-width: 1000px) {
+        @include flexBox(
+                $justifyContent: center,
+                $alignItems: center,
+                $flexWrap: wrap
+        );
+      }
+
+      .skils__item {
+        &:nth-child(2) {
+          margin: 0 30px;
+        }
+
+        @media (max-width: 1000px) {
+          &:nth-child(2) {
+            margin: 0 0 20px 0;
+          }
+          &:nth-child(3) {
+            margin: 0;
+          }
+          margin-bottom: 20px;
+        }
+
+        @include flexBox(
+                $justifyContent: flex-start,
+                $alignItems: center,
+                $flexDirection: column,
+        );
+
+        img {
+          width: 100%;
+          max-width: 150px;
+        }
+
+        h3 {
+          @include titleStyle($color: $TitleColor);
+          text-transform: uppercase;
+          margin-bottom: 30px;
+        }
+
+        p {
+          @include titleStyle($size: 18px, $color: $TextColor);
+          text-align: center;
+          line-height: 25px;
+        }
+      }
+
+    }
+
+
   }
 
-
 }
-
-
-
-
-
-
-
-
-
-.circle {
-  position: relative;
-  height: 1000px;
-  width: 1000px;
-  //border: 1px solid #fff;
-  margin: 0 auto;
-  .circle__item {
-    width: 350px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
-}
-
 
 
 

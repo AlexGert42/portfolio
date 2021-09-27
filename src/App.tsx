@@ -5,7 +5,6 @@ import {Footer} from "./components/footer/Footer";
 
 
 export const App: React.FC = () => {
-
     return (
         <div className={"wrapper"}>
             <Header/>

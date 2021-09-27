@@ -4,7 +4,7 @@ import {KingScreen} from "../../common/kingScreen/KingScreen";
 import F from '../../../imgs/Frame_contact.jpg'
 import {Button} from "../../common/button/Button";
 import {Field, FieldArea} from '../../common/field/Field';
-import {maxLengthCreator, requiredField, validateEmail } from '../../common/validators/Validators';
+import {maxLengthCreator, requiredField, validateEmail} from '../../common/validators/Validators';
 
 
 export const Contacts: React.FC = () => {
@@ -16,7 +16,6 @@ export const Contacts: React.FC = () => {
     const [error_3, setError_3] = useState<string>('')
 
     const [valid_1, valid_2, valid_3] = [requiredField, maxLengthCreator, validateEmail]
-
 
 
     const submitHendler = (e: React.SyntheticEvent) => {
@@ -63,6 +62,7 @@ export const Contacts: React.FC = () => {
                             error={error_2}
                         />
                     </div>
+
                     <div className={styles.contacts__arial}>
                         <FieldArea
                             className={styles.contacts__arial_item}
@@ -72,6 +72,7 @@ export const Contacts: React.FC = () => {
                             error={error_3}
                         />
                     </div>
+
                     <Button>Send</Button>
                 </form>
             </section>

@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
                             <div className={styles.header__inner}>
                                 <h1 className={styles.header__logo}>
                                     <span className={`${styles.header__logo_angle} ${styles.left}`}/>
-                                    <p className={styles.header__logo_text}>PORTFOLIO</p>
+                                    <HashLink to={'/home#start'} className={styles.header__logo_text}>PORTFOLIO</HashLink>
                                     <span className={`${styles.header__logo_angle} ${styles.right}`}/>
                                 </h1>
                                 <div className={styles.header__burger} onClick={() => clickHendler(true)}>
@@ -80,7 +80,7 @@ const MenuLayout = ({clickHendler}: clickHendlerType) => {
                             <HashLink to="/home#start">home</HashLink>
                         </li>
                         <li className={styles.header__menu_item} onClick={() => clickHendler(false)}>
-                            <HashLink to={'/portfolio#start'}>my works</HashLink>
+                            <HashLink to={'/works#start'}>my works</HashLink>
                         </li>
                         <li className={styles.header__menu_item} onClick={() => clickHendler(false)}>
                             <HashLink to={'/about#start'}>about</HashLink>
