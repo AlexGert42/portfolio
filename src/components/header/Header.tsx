@@ -3,7 +3,7 @@ import styles from './Header.module.scss'
 // @ts-ignore
 import Tilt from 'react-tilt'
 
-import { HashLink } from 'react-router-hash-link';
+import {HashLink} from 'react-router-hash-link';
 
 export const Header: React.FC = () => {
 
@@ -33,7 +33,8 @@ export const Header: React.FC = () => {
                             <div className={styles.header__inner}>
                                 <h1 className={styles.header__logo}>
                                     <span className={`${styles.header__logo_angle} ${styles.left}`}/>
-                                    <HashLink to={'/home#start'} className={styles.header__logo_text}>PORTFOLIO</HashLink>
+                                    <HashLink to={'/home#start'}
+                                              className={styles.header__logo_text}>PORTFOLIO</HashLink>
                                     <span className={`${styles.header__logo_angle} ${styles.right}`}/>
                                 </h1>
                                 <div className={styles.header__burger} onClick={() => clickHendler(true)}>
@@ -53,10 +54,6 @@ type clickHendlerType = {
 }
 
 const MenuLayout = ({clickHendler}: clickHendlerType) => {
-
-
-
-
     return (
         <div className={styles.menu}>
             <div className={styles.menu__inner}>
@@ -76,7 +73,6 @@ const MenuLayout = ({clickHendler}: clickHendlerType) => {
                 <nav className={styles.menu__navbar}>
                     <ul className={styles.header__menu_list}>
                         <li className={styles.header__menu_item} onClick={() => clickHendler(false)}>
-                            {/*<NavLink to={{pathname: '/home', hash: 'start'}}>home</NavLink>*/}
                             <HashLink to="/home#start">home</HashLink>
                         </li>
                         <li className={styles.header__menu_item} onClick={() => clickHendler(false)}>

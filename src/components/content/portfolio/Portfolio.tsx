@@ -6,8 +6,6 @@ import {MyWorks} from "../../common/myWorks/MyWorks";
 
 
 export const Portfolio: React.FC = () => {
-
-
     return (
         <>
             <KingScreen

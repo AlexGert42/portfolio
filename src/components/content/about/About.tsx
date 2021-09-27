@@ -19,10 +19,10 @@ export const About = () => {
                 <div className={styles.about}>
 
                     <div className={styles.about__charts}>
-                        <Fade bottom><Chart title={'Programmer'} value={70}/></Fade>
-                        <Fade bottom><Chart title={'Disain'} value={77}/></Fade>
-                        <Fade bottom><Chart title={'Programmer'} value={85}/></Fade>
-                        <Fade bottom><Chart title={'Programmer'} value={90}/></Fade>
+                        <Fade bottom><Chart title={'Programming'} value={90}/></Fade>
+                        <Fade bottom><Chart title={'Graphics'} value={85}/></Fade>
+                        <Fade bottom><Chart title={'Design'} value={77}/></Fade>
+                        <Fade bottom><Chart title={'Debugging'} value={80}/></Fade>
                     </div>
 
                     <div className={styles.about__text}>
