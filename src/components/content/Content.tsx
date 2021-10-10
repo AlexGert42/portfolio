@@ -15,7 +15,7 @@ export const Content: React.FC = () => {
     return (
         <main style={mainStyles}>
             <Switch>
-                <Route path={'/portfolio'} exact render={() => <Redirect to={'/home'}/>}/>
+                <Route path={'/'} exact render={() => <Redirect to={'/home#start'}/>}/>
                 <Route path={'/home'} component={Home}/>
                 <Route path={'/works'} component={Portfolio}/>
                 <Route path={'/about'} component={About}/>
