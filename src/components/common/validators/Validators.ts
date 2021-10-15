@@ -1,5 +1,22 @@
 import React from 'react'
+import {MessageType} from "../../../context/form/FormState";
 
+
+
+
+export const validators = ({name, email, text}: MessageType) => {
+    if (
+        requiredField(name) ||
+        maxLengthCreator(name) ||
+        requiredField(text) ||
+        validateEmail(email)
+    ) {
+
+        return false
+    } else {
+        return true
+    }
+}
 
 export const requiredField = (value: string) => {
     if (value.trim()) {

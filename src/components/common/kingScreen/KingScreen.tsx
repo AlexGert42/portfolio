@@ -4,7 +4,7 @@ import F from '../../../imgs/Frame_home.jpg'
 
 import github from '../../../imgs/icons/Github_white.svg'
 import telegram from '../../../imgs/icons/Telegram.svg'
-import linkIn from '../../../imgs/icons/google.svg'
+import linkIn from '../../../imgs/icons/in.svg'
 import hh from '../../../imgs/icons/hh.svg'
 
 
