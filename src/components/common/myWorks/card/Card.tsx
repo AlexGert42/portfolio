@@ -5,12 +5,13 @@ import Tilt from 'react-tilt'
 
 type CardType = {
     name: string
-    link: string
-    img?: string
+    linkSourse?: string
+    linkDeploy?: string
+    img: string
     opt: any
 }
 
-export const Card: React.FC<CardType> = ({name, opt, link, img}) => {
+export const Card: React.FC<CardType> = ({name, opt, linkSourse, linkDeploy, img}) => {
     return (
         <Tilt
             className={styles.card}
@@ -29,9 +30,16 @@ export const Card: React.FC<CardType> = ({name, opt, link, img}) => {
                     <span className={styles.card__decor}/>
                 </p>
                 <p className={styles.card__discription}>
-                    <a href={link}>
-                        View <br/> details.
-                    </a>
+                    {
+                        linkDeploy && <a href={linkDeploy}>
+                            View Deploy
+                        </a>
+                    }
+                    {
+                        linkSourse && <a href={linkSourse}>
+                            View Sourse
+                        </a>
+                    }
                 </p>
             </div>
         </Tilt>

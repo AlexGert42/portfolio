@@ -2,11 +2,6 @@ import React, {useContext} from 'react'
 import styles from './KingScreen.module.scss'
 import F from '../../../imgs/i.jpg'
 
-import github from '../../../imgs/icons/Github_white.svg'
-import telegram from '../../../imgs/icons/Telegram.svg'
-import google from '../../../imgs/icons/google.svg'
-import hh from '../../../imgs/icons/hh.svg'
-
 
 import {AppContext} from "../../../context/app/appContext";
 import {AppStateType} from "../../../context/app/AppState";
@@ -44,29 +39,14 @@ export const KingScreen: React.FC<KingScreenType> = ({
                     <div className={styles.screen__social}>
                         {links.map(item => {
                             return (
-                                <span className={styles.screen__social_item}>
+                                <span className={styles.screen__social_item} key={item.link}>
                                     <a href={item.link}>
-                                        <img src={item.icon} alt="GH"/>
+                                        <img src={item.icon} alt=" "/>
                                     </a>
                                     <span className={styles.screen__social_decor}/>
                                 </span>
                             )
                         })}
-                        {/*<a href={'#'}>*/}
-                        {/*    <img src={github} alt="GH"/>*/}
-                        {/*</a>*/}
-                        {/*<span className={styles.screen__social_decor}/>*/}
-                        {/*<a href="#">*/}
-                        {/*    <img src={telegram} alt="TL"/>*/}
-                        {/*</a>*/}
-                        {/*<span className={styles.screen__social_decor}/>*/}
-                        {/*<a href="#">*/}
-                        {/*    <img src={hh} alt="HH"/>*/}
-                        {/*</a>*/}
-                        {/*<span className={styles.screen__social_decor}/>*/}
-                        {/*<a href="#">*/}
-                        {/*    <img src={google} alt="GG"/>*/}
-                        {/*</a>*/}
                     </div>
                 </div>
             </div>

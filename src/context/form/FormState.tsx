@@ -21,7 +21,7 @@ export type MessageType = {
 }
 
 
-export const FormState = ({children}: any) => {
+export const FormState: React.FC<React.ReactNode> = ({children}) => {
 
     const [state, dispatch] = useReducer(formReducer, initialState)
 
@@ -36,7 +36,6 @@ export const FormState = ({children}: any) => {
         showLoading(true)
         let res = await axios.post('https://portfolio-nodejs-42.herokuapp.com/message', {...message})
         // let res = await axios.post('http://localhost:3010/message', {...message})
-        // console.log(res)
         if (res.status === 200) {
             dispatch({type: 'SHOW_MODAL'})
         }

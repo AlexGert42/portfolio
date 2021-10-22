@@ -48,8 +48,10 @@
 
     .card__discription {
       a {
+        display: block;
         @include titleStyle($size: 30px, $color: #fff);
         cursor: pointer;
+        padding: 20px 0;
       }
     }
   }

@@ -18,7 +18,7 @@ export const Contacts: React.FC = () => {
     const [error_2, setError_2] = useState<string>('')
     const [error_3, setError_3] = useState<string>('')
 
-    const {sendMessag, hideModal, form} = useContext<any>(FormContext)
+    const {sendMessag, hideModal, form} = useContext(FormContext)
 
     const submitHendler = (e: React.SyntheticEvent) => {
         e.preventDefault()
