@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Portfolio.module.scss'
 import {KingScreen} from "../../common/kingScreen/KingScreen";
-import F from '../../../imgs/Frame_menu.jpg'
+import F from '../../../imgs/frame_works.jpg'
 import {MyWorks} from "../../common/myWorks/MyWorks";
 
 

@@ -1,10 +1,9 @@
-import {StateType} from "./FormState";
+import {FormStateType} from "./FormState";
 
 
 type SendMessagType = {
     type: 'SHOW_MODAL'
 }
-
 
 type ShowLoadingType = {
     type: 'SHOW_LOADING'
@@ -18,7 +17,7 @@ type HideModalType = {
 
 export type ActionType = SendMessagType | ShowLoadingType | HideModalType
 
-export const formReducer = (state: StateType, action: ActionType) => {
+export const formReducer = (state: FormStateType, action: ActionType) => {
     switch (action.type) {
         case 'SHOW_MODAL' :
             return {

@@ -13,7 +13,7 @@ export const Home = () => {
 
     return (
         <div className={styles.home}>
-            <KingScreen/>
+            <KingScreen heightFrame={'760px'}/>
 
             <div className={styles.home__skils}>
                 <section className={"container"}>

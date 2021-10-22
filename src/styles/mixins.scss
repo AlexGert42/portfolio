@@ -16,9 +16,10 @@
 @mixin titleStyle(
   $size: 20px,
   $family: RobotoReg,
-  $color: $TitleColorWhate
+  $color: $TitleColorWhate,
+  $leterSpacing: 3px,
 ) {
-  letter-spacing: 3px;
+  letter-spacing: $leterSpacing;
   font-size: $size;
   font-family: $family;
   color: $color;

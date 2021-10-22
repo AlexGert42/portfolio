@@ -29,6 +29,11 @@
     .about__text_block {
       margin: 0 20px;
       p {
+        @include titleStyle($size: 16px, $color: $TextColor, $leterSpacing: 2px);
+        span {
+          display: block;
+          @include titleStyle($color: $TextColor);
+        }
         line-height: 25px;
         margin-bottom: 20px;
       }

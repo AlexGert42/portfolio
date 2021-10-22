@@ -7,18 +7,19 @@
   background-color: $BgFooterHeader;
   position: relative;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   animation: ShowScreeen .5s ease-in-out;
-  @media (max-width: 480px) {
-    background-position: 60%; // ????
+  @media (max-width: 768px) {
+    background-position: 60%;
   }
 
   .screen__inner {
-    height: 580px;
     @include flexBox($justifyContent: center, $flexDirection: column, $alignItems: flex-start);
     color: $TitleColorWhate;
 
     @media (max-width: 480px) {
-      height: 100vh;
+      height: 100vh !important;
     }
 
     .screen__title {
@@ -58,22 +59,34 @@
       display: flex;
       align-items: center;
 
-      .screen__social_decor {
-        display: block;
-        background-image: url("../../../imgs/icons/Line.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 60px;
-        height: 30px;
-      }
+      .screen__social_item {
+        display: flex;
+        align-items: center;
 
-      a {
-        display: block;
+        &:last-child {
+          .screen__social_decor {
+            display: none;
+          }
+        }
 
-        img {
-          width: 70%;
+        .screen__social_decor {
+          display: block;
+          background-image: url("../../../imgs/icons/Line.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 60px;
+          height: 30px;
+        }
+
+        a {
+          display: block;
+          img {
+            width: 70%;
+          }
         }
       }
+
+
     }
   }
 }
