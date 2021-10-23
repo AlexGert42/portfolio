@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4bb14712.chunk.css",
-    "main.js": "/portfolio/static/js/main.c0919820.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c0919820.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.e4f58b9b.chunk.css",
+    "main.js": "/portfolio/static/js/main.fae3538f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.fae3538f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
     "static/js/2.3e5b2ba8.chunk.js": "/portfolio/static/js/2.3e5b2ba8.chunk.js",
     "static/js/2.3e5b2ba8.chunk.js.map": "/portfolio/static/js/2.3e5b2ba8.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.4bb14712.chunk.css.map": "/portfolio/static/css/main.4bb14712.chunk.css.map",
+    "static/css/main.e4f58b9b.chunk.css.map": "/portfolio/static/css/main.e4f58b9b.chunk.css.map",
     "static/js/2.3e5b2ba8.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3e5b2ba8.chunk.js.LICENSE.txt",
-    "static/media/Card_1.99d2fe6b.jpg": "/portfolio/static/media/Card_1.99d2fe6b.jpg",
-    "static/media/Card_2.43625635.jpg": "/portfolio/static/media/Card_2.43625635.jpg",
-    "static/media/Card_3.ea4ba59e.jpg": "/portfolio/static/media/Card_3.ea4ba59e.jpg",
-    "static/media/Card_4.fb527f99.jpg": "/portfolio/static/media/Card_4.fb527f99.jpg",
+    "static/media/Card_1.186f4af4.jpg": "/portfolio/static/media/Card_1.186f4af4.jpg",
+    "static/media/Card_2.9cb8f1a1.jpg": "/portfolio/static/media/Card_2.9cb8f1a1.jpg",
+    "static/media/Card_3.31aee9f6.jpg": "/portfolio/static/media/Card_3.31aee9f6.jpg",
+    "static/media/Card_4.eeb8271b.jpg": "/portfolio/static/media/Card_4.eeb8271b.jpg",
+    "static/media/Card_5.77e706ab.jpg": "/portfolio/static/media/Card_5.77e706ab.jpg",
     "static/media/Frame_contact.df94e4ce.jpg": "/portfolio/static/media/Frame_contact.df94e4ce.jpg",
     "static/media/Header.module.scss": "/portfolio/static/media/cross.39cf3505.svg",
     "static/media/Github_white.055fa310.svg": "/portfolio/static/media/Github_white.055fa310.svg",
@@ -32,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.a9f76519.js",
     "static/js/2.3e5b2ba8.chunk.js",
-    "static/css/main.4bb14712.chunk.css",
-    "static/js/main.c0919820.chunk.js"
+    "static/css/main.e4f58b9b.chunk.css",
+    "static/js/main.fae3538f.chunk.js"
   ]
 }
