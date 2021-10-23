@@ -29,7 +29,7 @@ export interface AppStateType {
 export const appInitialState: AppStateType = {
     links: [
         {
-            link: 'https://github.com/AlexGert42',
+            link: 'https://github.com/AlexGert42?tab=repositories',
             icon: github
         },
         {
@@ -53,35 +53,35 @@ export const appInitialState: AppStateType = {
             img: todolist_img
         },
         {
-            name: 'Cart Aplication',
+            name: 'Shop Aplication',
             sourseLink: 'https://github.com/AlexGert42/shop.git',
-            deployLink: '',
+            deployLink: 'https://alexgert42.github.io/shop/',
             img: shop_img
         },
         {
-            name: 'Tic Tac Toe',
-            sourseLink: '',
-            deployLink: 'sas',
+            name: 'TestUrban Smart',
+            sourseLink: 'https://github.com/AlexGert42/urban_smart.git',
+            deployLink: 'https://alexgert42.github.io/urban_smart/#/',
             img: tic_tac_toe_img
         },
         {
-            name: 'MBA Test',
+            name: 'Test MBA',
             sourseLink: 'https://github.com/AlexGert42/mba.git',
             deployLink: 'https://alexgert42.github.io/mba/',
+            img: tic_tac_toe_img
+        },
+        {
+            name: 'Test OnePoint',
+            sourseLink: 'https://github.com/AlexGert42/work_test.git',
+            deployLink: 'https://alexgert42.github.io/work_test/',
             img: mba_img
         },
         {
-            name: 'Test City',
-            sourseLink: 'https://github.com/AlexGert42/work_test.git',
-            deployLink: 'https://github.com/AlexGert42/test_city.git',
-            img: test_city_img
+            name: 'x-way',
+            sourseLink: 'https://github.com/AlexGert42/xWay.git',
+            deployLink: 'https://www.x-way.studio/',
+            img: work_test_img
         },
-        // {
-        //     name: 'Test City',
-        //     sourseLink: 'https://github.com/AlexGert42/work_test.git',
-        //     deployLink: 'https://github.com/AlexGert42/test_city.git',
-        //     img: test_city_img
-        // },
     ]
 }
 

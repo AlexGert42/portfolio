@@ -23,23 +23,29 @@ export const Home = () => {
                         <div className={styles.skils__item}>
                             <img src={icon_1} alt=""/>
                             <h3>JS</h3>
-                            <p>Lorem aborum modi neque praesentium repudiandae tenetur? Culpa cum eos est molestiae
-                                mollitia odio qui repellat tempora!</p>
+                            {/*<p>*/}
+                            {/*    Lorem aborum modi neque praesentium repudiandae tenetur? Culpa cum eos est molestiae*/}
+                            {/*    mollitia odio qui repellat tempora!*/}
+                            {/*</p>*/}
                         </div>
 
                         <div className={styles.skils__item}>
                             <img src={icon_1} alt=""/>
                             <h3>HTML/CSS</h3>
-                            <p>Lorem ipsum dolor sit ntium repudiandae tenetur? Culpa cum eos est molestiae mollitia
-                                odio qui repellat tempora!</p>
+                            {/*<p>*/}
+                            {/*    Lorem ipsum dolor sit ntium repudiandae tenetur? Culpa cum eos est molestiae mollitia*/}
+                            {/*    odio qui repellat tempora!*/}
+                            {/*</p>*/}
                         </div>
 
                         <div className={styles.skils__item}>
                             <img src={icon_1} alt=""/>
                             <h3>REACT</h3>
-                            <p>Lorem tium repudiandae tenetur? Culpa cum eos est molestiae mollitia odio qui
-                                repellat
-                                tempora!</p>
+                            {/*<p>*/}
+                            {/*    Lorem tium repudiandae tenetur? Culpa cum eos est molestiae mollitia odio qui*/}
+                            {/*    repellat*/}
+                            {/*    tempora!*/}
+                            {/*</p>*/}
                         </div>
                     </div>
                 </section>

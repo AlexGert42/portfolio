@@ -33,6 +33,7 @@
         span {
           display: block;
           @include titleStyle($color: $TextColor);
+          font-weight: 800;
         }
         line-height: 25px;
         margin-bottom: 20px;

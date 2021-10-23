@@ -40,9 +40,9 @@ export const About = () => {
                             <Fade buttom>
                                 <p>
                                     My hard skills: React, TypeScript, Webpack, HTML, SCSS, Python, Django, SQL.
-                                    Ui libraries: Material ui, Ant design. Deep knowledge of Figma and Photoshop. You
-                                    may find some of my projects in this
-                                    portfolio.
+                                    Ui libraries: Material ui, Ant design. Deep knowledge of Figma and Photoshop.I also
+                                    can do different types of code testing and prefer to code longer but with better
+                                    quality. You may find some of my projects in this portfolio.
                                 </p>
                             </Fade>
                             <Fade buttom>
@@ -56,32 +56,24 @@ export const About = () => {
 
                         <div className={styles.about__text_block}>
                             <Fade buttom>
+                                <br/>
                                 <p>
+                                    I’m highly motivated, like to resolve coding
+                                    problems, to craft solid and scalable frontend products with great user experiences,
+                                    always pushing my own boundaries and allowing myself to think out of the box.
+                                </p>
+                            </Fade>
+                            <Fade buttom>
 
+                                <p>
+                                    And of course I love my dog as you already guessed because of the photo above, his
+                                    name is Balu and he helps me with my work and other passions: travelling, hiking,
+                                    sport. As a professional sportsman in the past I prefer active lifestyle but on the
+                                    other hand I also like staying at home and spend time with Balu.
                                 </p>
                             </Fade>
                             <Fade buttom>
-                                <p>
-                                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit
-                                    in iusto
-                                    laboriosam
-                                    quaerat soluta, ut.a
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut
-                                    autem
-                                    cupiditate
-                                    expedita, quas
-                                </p>
-                            </Fade>
-                            <Fade buttom>
-                                <p>
-                                    expedita, quas quibusdam quisquam sunt unde? Aperiam distinctio doloremque impedit
-                                    in iusto
-                                    laboriosam
-                                    quaerat soluta, ut.a
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dicta, vel! Aut
-                                    autem
-                                    cupiditate
-                                </p>
+
                             </Fade>
                         </div>
 

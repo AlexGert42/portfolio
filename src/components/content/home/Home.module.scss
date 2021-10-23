@@ -64,8 +64,9 @@
 
         h3 {
           @include titleStyle($color: $TitleColor);
+          font-weight: 800;
           text-transform: uppercase;
-          margin-bottom: 30px;
+          //margin-bottom: 30px;
         }
 
         p {
