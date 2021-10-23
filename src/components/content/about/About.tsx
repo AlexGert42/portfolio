@@ -34,22 +34,15 @@ export const About = () => {
                                     My name is Alex Gert, I develop interfaces, responsive apps for desktop, Android,
                                     single-page applications with pixel-perfect code. I have high skills in algorithms,
                                     data structures, databases/server management etc. Mostly I specialize in front-end
-                                    development and have been working as a freelancer starting from 2020 year.
+                                    development and have been working as a freelancer since 2020 year.
                                 </p>
                             </Fade>
                             <Fade buttom>
                                 <p>
                                     My hard skills: React, TypeScript, Webpack, HTML, SCSS, Python, Django, SQL.
-                                    Ui libraries: Material ui, Ant design. Deep knowledge of Figma and Photoshop.I also
+                                    Ui libraries: Material ui, Ant design. Deep knowledge of Figma and Photoshop. I also
                                     can do different types of code testing and prefer to code longer but with better
                                     quality. You may find some of my projects in this portfolio.
-                                </p>
-                            </Fade>
-                            <Fade buttom>
-                                <p>
-                                    I’m highly motivated, like to resolve coding
-                                    problems, to craft solid and scalable frontend products with great user experiences,
-                                    always pushing my own boundaries and allowing myself to think out of the box.
                                 </p>
                             </Fade>
                         </div>
