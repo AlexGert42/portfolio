@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './About.module.scss'
 import {KingScreen} from "../../common/kingScreen/KingScreen";
-import F from '../../../imgs/frame_about.jpg'
+import F from '../../../imgs/Frame_about.jpg';
 import {Chart} from "../../common/chart/Chart";
 // @ts-ignore
 import Fade from 'react-reveal/Fade';

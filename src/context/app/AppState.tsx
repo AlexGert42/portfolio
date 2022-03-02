@@ -21,7 +21,7 @@ export interface AppStateType {
     works: {
         name: string
         sourseLink: string
-        deployLink: string
+        deployLink?: string 
         img: string
     }[]
 }
@@ -47,28 +47,22 @@ export const appInitialState: AppStateType = {
     ],
     works: [
         {
-            name: 'Todolist',
-            sourseLink: 'https://github.com/AlexGert42/todoDz.git',
-            deployLink: 'https://alexgert42.github.io/todoDz/',
-            img: todolist_img
-        },
-        {
-            name: 'Shop Aplication',
-            sourseLink: 'https://github.com/AlexGert42/shop.git',
-            deployLink: 'https://alexgert42.github.io/shop/',
+            name: 'MBA',
+            sourseLink: 'https://github.com/npomba/moscow.mba.git',
+            deployLink: 'https://moscow.mba',
             img: shop_img
         },
         {
-            name: 'TestUrban Smart',
-            sourseLink: 'https://github.com/AlexGert42/urban_smart.git',
-            deployLink: 'https://alexgert42.github.io/urban_smart/#/',
+            name: 'MITU',
+            sourseLink: 'https://github.com/anpmitu/mitu.msk.ru.git',
+            deployLink: 'https://mitu-msk-ru-2cu8zjwfv-ipe.vercel.app/',
             img: tic_tac_toe_img
         },
         {
-            name: 'Test MBA',
-            sourseLink: 'https://github.com/AlexGert42/mba.git',
-            deployLink: 'https://alexgert42.github.io/mba/',
-            img: tic_tac_toe_img
+            name: 'Integration AmoCrm',
+            sourseLink: 'https://github.com/AlexGert42/amo-api.git',
+            // deployLink: 'https://alexgert42.github.io/mba/',
+            img: todolist_img
         },
         {
             name: 'Test OnePoint',
